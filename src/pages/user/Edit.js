@@ -9,6 +9,7 @@ function Add() {
 
   const { id } = useParams();
 
+  
   useEffect(() => {
     axios.get(`http://localhost:3001/users/${id}`).then((res) => {
       setName(res.data.name);
